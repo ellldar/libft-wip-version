@@ -5,7 +5,7 @@ It might end up being completely different compared to what was originally requi
 
 ## Additions to the Libft
 
-This part will address the changes that I have included since I turned in the original **Libft Library**
+In this part I will list and describe new functions that I have included in this library since the original **Libft Library**
 
 * ### ft_lstpop
 
