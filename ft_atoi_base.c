@@ -49,7 +49,7 @@ int			ft_atoi_base(const char *str, int str_base)
 	if (*str == '-' || *str == '+')
 		if (*str++ == '-')
 			is_negative = -1;
-	while (*str && (v = is_valid_char(*str++, str_base)))
+	while (*str && (v = is_valid_char(*str++)))
 		if ((v - 1) < str_base)
 			result = (result * str_base) + (v - 1);
 		else
