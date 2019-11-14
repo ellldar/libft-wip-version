@@ -126,5 +126,6 @@ int				ft_abs(int n);
 int				ft_get_int_len(int n);
 int				ft_skip_char(char **ptr, char c);
 int				get_next_line(const int fd, char **line);
+int				ft_atoi_base(const char *str, int str_base);
 
 #endif
