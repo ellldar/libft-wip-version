@@ -24,7 +24,7 @@ static int	is_ok_char(char c)
 	return (0);
 }
 
-static int	is_valid_char(char c, size_t str_base)
+static int	is_valid_char(char c)
 {
 	static char	*letters = "0123456789abcdef";
 	size_t		i;
