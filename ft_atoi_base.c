@@ -43,12 +43,11 @@ int			ft_atoi_base(const char *str, int str_base)
 	int v;
 
 	result = 0;
-	is_negative = 1;
 	while (is_ok_char(*str))
 		str++;
+	is_negative = *str == '-' ? - 1 : 1;
 	if (*str == '-' || *str == '+')
-		if (*str++ == '-')
-			is_negative = -1;
+		str++;
 	while (*str && (v = is_valid_char(*str++)))
 		if ((v - 1) < str_base)
 			result = (result * str_base) + (v - 1);
