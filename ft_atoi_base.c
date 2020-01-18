@@ -45,7 +45,7 @@ int			ft_atoi_base(const char *str, int str_base)
 	result = 0;
 	while (is_ok_char(*str))
 		str++;
-	is_negative = *str == '-' ? - 1 : 1;
+	is_negative = *str == '-' ? -1 : 1;
 	if (*str == '-' || *str == '+')
 		str++;
 	while (*str && (v = is_valid_char(*str++)))
